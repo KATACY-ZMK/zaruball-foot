@@ -20,7 +20,6 @@
 include:
   - board: seeeduino_xiao_ble
     shield: zarufoot_f
-    snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: zarufoot_l
   - board: seeeduino_xiao_ble

@@ -7,10 +7,10 @@
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
     };
-};
+
 
 // physical layouts (key propretyあり)
-/ {
+
     physical_layout0: physical_layout0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
@@ -95,10 +95,9 @@
             
             ;
     };
-};
 
 //matrix transoform
-/ {
+
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <16>;
@@ -111,10 +110,10 @@
             RC(4,0)         RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6)      RC(4,8)  RC(4,7)                                   RC(4,12)      RC(4,13) RC(4,14) RC(4,15)
         >;
     };
-};
+
 
 // kscan
-/ {
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -128,10 +127,10 @@
             , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
-};
+
 
 // encoder
-/ {
+
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -139,21 +138,19 @@
         steps = <80>;
         status = "disabled";
     };
-};
+
 
 //sensor
-/ {
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
-};
 
-//pmw3610 listener
-/ {
-   trackball_listener: trackball_listener {
-         compatible = "zmk,input-listener";
-         status = "disabled";
-     };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
 };

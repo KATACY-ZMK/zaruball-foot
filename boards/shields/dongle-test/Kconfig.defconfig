@@ -1,7 +1,7 @@
-if SHIELD_ZARUFOOT_R
+if SHIELD_ZARUFOOT_F
 
 config ZMK_KEYBOARD_NAME
-    default "zarufoot_r"
+    default "zarufoot_f"
 
 config ZMK_SPLIT
     default y
@@ -11,10 +11,10 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_ZARUFOOT_F
+if SHIELD_ZARUFOOT_R
 
 config ZMK_KEYBOARD_NAME
-    default "zarufoot_f"
+    default "zarufoot_r"
 
 config ZMK_SPLIT
     default y

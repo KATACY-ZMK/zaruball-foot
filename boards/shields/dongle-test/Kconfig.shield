@@ -1,0 +1,8 @@
+config SHIELD_ZARUFOOT_F
+    def_bool $(shields_list_contains,zarufoot_f)
+
+config SHIELD_ZARUFOOT_R
+    def_bool $(shields_list_contains,zarufoot_r)
+
+config SHIELD_ZARUFOOT_L
+    def_bool $(shields_list_contains,zarufoot_l)

@@ -1,0 +1,15 @@
+file_format: "1"
+id: zarufoot
+name: zarufoot
+type: shield
+url: https://github.com/KATACY-ZMK/zarufoot
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - encoder
+  - backlight
+  - pointer
+siblings:
+  - zarufoot_f
+  - zarufoot_r
+  - zarufoot_l
